@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController("/api")
+@RestController
 public class AzuredemoApplication {
 
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class AzuredemoApplication {
 	}
 	
 	
-	@RequestMapping(value = "/hello")
+	@RequestMapping(value = "/")
 	public String getMessage() {
 		return "hello";
 	}
